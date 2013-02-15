@@ -1,0 +1,26 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://tutorialapp.saucelabs.com/"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "About this demo"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "shootout"
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "This is a demo application for the Pyramid Python web framework."
+    }
+  ]
+}
