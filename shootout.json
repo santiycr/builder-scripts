@@ -1,0 +1,87 @@
+{
+  "type": "script",
+  "seleniumVersion": "2",
+  "formatVersion": 1,
+  "steps": [
+    {
+      "type": "get",
+      "url": "http://tutorialapp.saucelabs.com/"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "login"
+      },
+      "text": "santiycr"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "name",
+        "value": "password"
+      },
+      "text": "xnR9hvc6fN"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "name",
+        "value": "submit"
+      }
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Post an idea"
+      }
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "title"
+      },
+      "text": "Testing my ideas"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "tags"
+      },
+      "text": "testing ideas"
+    },
+    {
+      "type": "setElementText",
+      "locator": {
+        "type": "id",
+        "value": "text"
+      },
+      "text": "Meh, I guess I'll just type and type and type and type"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "id",
+        "value": "form.submitted"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Testing my ideas"
+    },
+    {
+      "type": "clickElement",
+      "locator": {
+        "type": "link text",
+        "value": "Home"
+      }
+    },
+    {
+      "type": "verifyTextPresent",
+      "text": "Testing my ideas"
+    }
+  ]
+}
